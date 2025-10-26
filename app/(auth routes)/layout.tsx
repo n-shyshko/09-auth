@@ -9,9 +9,13 @@ type Props = {
 
 export default function AuthLayout({ children }: Props) {
   const [loading, setLoading] = useState(true);
+
   const router = useRouter();
+
   useEffect(() => {
-    setTimeout(() => setLoading(false), 0);
+    router.refresh();
+    setLoading(false);
   }, [router]);
+
   return <>{loading ? <div>Loading...</div> : children}</>;
 }
