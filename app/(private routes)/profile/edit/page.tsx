@@ -3,7 +3,6 @@
 import { useAuthStore } from "@/lib/store/authStore";
 import toast from "react-hot-toast";
 import css from "./page.module.css";
-
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { updateMe, UpdateMeRequest } from "@/lib/api/clientApi";

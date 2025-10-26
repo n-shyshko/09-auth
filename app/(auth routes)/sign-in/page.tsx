@@ -39,29 +39,29 @@ export default function SignInPage() {
         <h1 className={css.formTitle}>Sign in</h1>
 
         <div className={css.formGroup}>
-          <label htmlFor="email">Email</label>
+          <label htmlFor='email'>Email</label>
           <input
-            id="email"
-            type="email"
-            name="email"
+            id='email'
+            type='email'
+            name='email'
             className={css.input}
             required
           />
         </div>
 
         <div className={css.formGroup}>
-          <label htmlFor="password">Password</label>
+          <label htmlFor='password'>Password</label>
           <input
-            id="password"
-            type="password"
-            name="password"
+            id='password'
+            type='password'
+            name='password'
             className={css.input}
             required
           />
         </div>
 
         <div className={css.actions}>
-          <button type="submit" className={css.submitButton}>
+          <button type='submit' className={css.submitButton}>
             Log in
           </button>
         </div>
