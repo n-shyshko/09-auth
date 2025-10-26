@@ -14,7 +14,7 @@ export default function AuthLayout({ children }: Props) {
 
   useEffect(() => {
     router.refresh();
-    setLoading(false);
+    setTimeout(() => setLoading(false), 0);
   }, [router]);
 
   return <>{loading ? <div>Loading...</div> : children}</>;
