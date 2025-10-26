@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "NoteHub",
     description:
       "NoteHub — simple app for creating, editing, and organizing your notes in one place. Stay productive and keep your ideas always at hand.",
-    url: "http://localhost:3000",
+    url: "https://09-auth-theta-one.vercel.app/",
     images: [
       {
         url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",
@@ -42,11 +42,11 @@ export default function RootLayout({
   modal: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.variable}>
+    <html lang='en' className={roboto.variable}>
       <body>
         <TanStackProvider>
           <AuthProvider>
-            <Toaster position="top-right" toastOptions={{ duration: 2000 }} />
+            <Toaster position='top-right' toastOptions={{ duration: 2000 }} />
             <Header />
             <main>
               {children}

@@ -27,7 +27,7 @@ export async function generateMetadata({
       title: `Notes: ${tag}`,
       description:
         "Browse your notes, stay organized, and manage your ideas with NoteHub.",
-      url: `https://08-zustand-green-rho.vercel.app/${tag}`,
+      url: `https://09-auth-theta-one.vercel.app/${tag}`,
       images: [
         {
           url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",
